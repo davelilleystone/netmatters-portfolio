@@ -35,6 +35,7 @@
 
   &__logo-hb-wrapper {
     display: flex;
+    position: relative;
 
     @include mq(m) {
       width: auto;
@@ -42,9 +43,7 @@
   }
 
   &__links-wrapper {
-    display: flex;
-    width: 100%;
-    background-color: red;
+    display: none;
 
     @include mq(m) {
       display: flex;
@@ -52,6 +51,12 @@
     }
     @include mq(l) {
       width: 100%;
+    }
+
+    &.navigation__links-wrapper--open {
+      display: flex;
+      width: 100%;
+      background-color: red;
     }
   }
 

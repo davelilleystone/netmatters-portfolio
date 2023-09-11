@@ -66,6 +66,7 @@
 }
 .navigation__logo-hb-wrapper {
   display: flex;
+  position: relative;
 }
 @media screen and (min-width: 768px) {
   .navigation__logo-hb-wrapper {
@@ -73,9 +74,7 @@
   }
 }
 .navigation__links-wrapper {
-  display: flex;
-  width: 100%;
-  background-color: red;
+  display: none;
 }
 @media screen and (min-width: 768px) {
   .navigation__links-wrapper {
@@ -87,6 +86,11 @@
   .navigation__links-wrapper {
     width: 100%;
   }
+}
+.navigation__links-wrapper.navigation__links-wrapper--open {
+  display: flex;
+  width: 100%;
+  background-color: red;
 }
 .navigation__links {
   display: flex;

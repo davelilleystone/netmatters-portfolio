@@ -11,8 +11,19 @@
 
 @media screen and (min-width: 992px) {
   .grid-navigation-wrapper {
-    display: fixed;
+    position: fixed;
     top: 0%;
+    height: 100%;
+    width: 200px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .grid-content-wrapper {
+    position: relative;
+    height: 100%;
+    width: calc(100vw - 200px);
+    margin-left: 200px;
   }
 }
 
@@ -25,7 +36,7 @@
   .navigation {
     flex-direction: column;
     align-items: center;
-    height: 100vh;
+    height: 100%;
   }
 }
 .navigation__logo {
@@ -97,6 +108,7 @@
 @media screen and (min-width: 992px) {
   .navigation__socials {
     display: flex;
+    margin-top: auto;
   }
 }
 

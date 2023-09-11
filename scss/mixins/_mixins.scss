@@ -5,11 +5,11 @@
     @media screen and (min-width: $xs) {
       @content;
     }
-  } @else if($bp == $mq-s) {
+  } @else if($bp == s) {
     @media screen and (min-width: $s) {
       @content;
     }
-  } @else if($bp == $mq-m) {
+  } @else if($bp == m) {
     @media screen and (min-width: $m) {
       @content;
     }

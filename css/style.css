@@ -1,11 +1,12 @@
 .grid-wrapper {
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr;
   grid-auto-rows: auto;
 }
 @media screen and (min-width: 992px) {
   .grid-wrapper {
-    grid-template-columns: max-content 1fr;
+    grid-template-columns: 1fr;
   }
 }
 
@@ -21,8 +22,8 @@
 @media screen and (min-width: 992px) {
   .grid-content-wrapper {
     position: relative;
-    height: 100%;
-    width: calc(100vw - 200px);
+    width: 100%;
+    width: calc(100% - 200px);
     margin-left: 200px;
   }
 }

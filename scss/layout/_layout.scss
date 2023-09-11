@@ -7,3 +7,10 @@
     grid-template-columns: max-content 1fr;
   }
 }
+
+.grid-navigation-wrapper {
+  @include mq(l) {
+    display: fixed;
+    top: 0%;
+  }
+}

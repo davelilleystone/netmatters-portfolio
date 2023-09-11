@@ -1,9 +1,12 @@
 .navigation {
   display: flex;
   flex-wrap: wrap;
+  background-color: yellow;
+
   @include mq(l) {
     flex-direction: column;
     align-items: center;
+    height: 100vh;
   }
 
   &__logo {
@@ -22,8 +25,9 @@
 
   &__hamburger {
     display: flex;
-    justify-content: flex-end;
     order: 2;
+    justify-content: flex-end;
+
     width: 50%;
     @include mq(m) {
       display: none;
@@ -31,11 +35,13 @@
   }
 
   &__links-wrapper {
-    flex: 1;
-    display: flex;
-    justify-content: center;
+    display: none;
     order: 3;
+    width: 100%;
+
     @include mq(m) {
+      display: flex;
+      order: 3;
       width: 60%;
     }
     @include mq(l) {
@@ -62,7 +68,7 @@
     display: none;
     order: 4;
     @include mq(l) {
-      display: block;
+      display: flex;
     }
   }
 }

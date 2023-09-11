@@ -21,8 +21,6 @@
 .grid-content-wrapper {
   @include mq(l) {
     position: relative;
-    width: 100%;
-    width: calc(100% - 200px);
     margin-left: 200px;
   }
 }

@@ -1,0 +1,23 @@
+.hero {
+  background: url(../../img/hero/hero-image-bw.jpg) no-repeat center/cover;
+  width: 100%;
+  height: calc(100vh - 3rem);
+  @include mq(l) {
+    height: 100vh;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    color: white;
+  }
+
+  &__intro {
+  }
+
+  &__title {
+  }
+}

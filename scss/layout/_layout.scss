@@ -1,8 +1,10 @@
+// wraps navigation and content
 .flex-main-wrapper {
   display: flex;
   flex-direction: column;
 }
 
+// wraps navigation
 .flex-navigation-wrapper {
   @include mq(l) {
     position: fixed;
@@ -12,9 +14,16 @@
   }
 }
 
+// wraps content
 .flex-content-wrapper {
   @include mq(l) {
     position: relative;
     margin-left: px-to-rem(200px);
   }
+}
+
+.inner-wrapper {
+  padding: px-to-rem(30px) 1rem;
+  margin: 0px auto;
+  max-width: $inner-wrapper-max;
 }

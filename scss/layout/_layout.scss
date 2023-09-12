@@ -23,7 +23,10 @@
 }
 
 .inner-wrapper {
-  padding: px-to-rem(30px) 1rem;
   margin: 0px auto;
   max-width: $inner-wrapper-max;
+}
+
+.full-width-wrapper {
+  padding: px-to-rem(30px) 1rem 0;
 }

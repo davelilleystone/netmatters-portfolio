@@ -20,14 +20,19 @@
 }
 
 .inner-wrapper {
-  padding: 1.875rem 1rem;
   margin: 0px auto;
   max-width: 1200px;
+}
+
+.full-width-wrapper {
+  padding: 1.875rem 1rem 0;
 }
 
 :root {
   line-height: 1.5;
   font-size: 16px;
+  font-family: Montserrat;
+  font-weight: 600;
 }
 
 * {
@@ -119,7 +124,6 @@
 }
 .navigation__link {
   text-decoration: none;
-  font-weight: bold;
 }
 .navigation__link--logo {
   display: flex;
@@ -146,6 +150,8 @@
 
 .hero {
   background: url(../../img/hero/hero-image-bw.jpg) no-repeat center/cover;
+  background-color: red;
+  background-blend-mode: multiply;
   width: 100%;
   height: calc(100vh - 3rem);
 }
@@ -163,6 +169,9 @@
   color: white;
 }
 .projects__wrapper {
+  padding-top: 25px;
+  width: 95%;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -199,6 +208,43 @@
 @media screen and (min-width: 1200px) {
   .projects__item {
     width: 32%;
+  }
+}
+
+.full-width-wrapper--projects {
+  background-color: blue;
+}
+
+.contact__wrapper {
+  padding: 30px 0;
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 768px) {
+  .contact__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.contact__item {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+}
+.contact__form-wrapper {
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .contact__form-wrapper {
+    width: 45%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contact__details-wrapper {
+    width: 45%;
   }
 }
 

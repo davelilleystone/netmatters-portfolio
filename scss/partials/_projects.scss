@@ -1,5 +1,8 @@
 .projects {
   &__wrapper {
+    padding-top: 25px;
+    width: 95%;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -33,4 +36,8 @@
       width: 32%;
     }
   }
+}
+
+.full-width-wrapper--projects {
+  background-color: blue;
 }

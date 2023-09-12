@@ -16,10 +16,6 @@
   }
 
   &__logo {
-    @include mq(m) {
-      width: auto;
-    }
-
     @include mq(l) {
       width: 100%;
     }
@@ -37,7 +33,6 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
-    height: 3rem;
   }
 
   // hide links at smaller screen size for now
@@ -68,10 +63,6 @@
       justify-content: space-between;
     }
 
-    @include mq(m) {
-      flex-direction: row;
-      justify-content: space-between;
-    }
     @include mq(l) {
       flex-direction: column;
       width: 100%;

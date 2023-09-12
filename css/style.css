@@ -8,7 +8,7 @@
     position: fixed;
     top: 0%;
     height: 100%;
-    width: 200px;
+    width: 12.5rem;
   }
 }
 
@@ -38,11 +38,6 @@
     height: 100%;
   }
 }
-@media screen and (min-width: 768px) {
-  .navigation__logo {
-    width: auto;
-  }
-}
 @media screen and (min-width: 992px) {
   .navigation__logo {
     width: 100%;
@@ -61,7 +56,6 @@
   justify-content: space-between;
   align-items: center;
   position: relative;
-  height: 3rem;
 }
 .navigation__links-wrapper {
   display: none;
@@ -94,12 +88,6 @@
     justify-content: space-between;
   }
 }
-@media screen and (min-width: 768px) {
-  .navigation__links {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-}
 @media screen and (min-width: 992px) {
   .navigation__links {
     flex-direction: column;
@@ -125,6 +113,7 @@
 
 :root {
   line-height: 1.5;
+  font-size: 16px;
 }
 
 * {

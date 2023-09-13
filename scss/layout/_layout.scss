@@ -2,31 +2,46 @@
 .flex-main-wrapper {
   display: flex;
   flex-direction: column;
+  background-color: #e0e1dd;
 }
 
-// wraps navigation
+// wraps page navigation
 .flex-navigation-wrapper {
   @include mq(l) {
     position: fixed;
     top: 0%;
     height: 100%;
-    width: px-to-rem(200px);
+    width: px-to-rem(300px);
   }
 }
 
-// wraps content
+// wraps all content on page
 .flex-content-wrapper {
   @include mq(l) {
     position: relative;
-    margin-left: px-to-rem(200px);
+    margin-left: px-to-rem(300px);
+    border-left: 3px solid #0d1b2a;
   }
 }
 
+// full width wrapper
+.full-width-wrapper {
+  padding: px-to-rem(30px) 1rem 0;
+}
+
+// constrains content to 1200px
 .inner-wrapper {
-  margin: 0px auto;
+  margin: 0 auto;
   max-width: $inner-wrapper-max;
 }
 
-.full-width-wrapper {
-  padding: px-to-rem(30px) 1rem 0;
+// adds a border around content
+.inner-wrapper-content {
+  padding: 1rem;
+  width: 95%;
+  margin: 1rem auto 0;
+  border-radius: 4px;
+  @include mq(s) {
+    padding: 1.5rem;
+  }
 }

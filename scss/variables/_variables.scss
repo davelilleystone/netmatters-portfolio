@@ -1,6 +1,36 @@
-//
+// colours
 
-$base-font-size: 16px;
+$midnight: #0d1b2a;
+$ebony-clay: #1b263b;
+$slate: #415a77;
+$grey-blue: #778da9;
+$pearl-blush: #e0e1dd;
+
+// default colour
+
+$default-color: $midnight;
+
+// colors - sections
+
+// hero
+
+$hero-text-color: $pearl-blush;
+$hero-text-background-color: $ebony-clay;
+$hero-image-blend: $slate;
+
+// nav
+
+$nav-link-color: $midnight;
+$nav-hover-color: $grey-blue;
+$nav-background-color: $pearl-blush;
+$nav-logo-background-color: $midnight;
+$nav-logo-hover-background-color: $pearl-blush;
+$nav-logo-hover-border-color: $midnight;
+
+// fonts
+
+$base-font-size: 1rem;
+$hero-title-size: 4rem;
 
 // screen sizes
 

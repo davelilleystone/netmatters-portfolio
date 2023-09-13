@@ -32,6 +32,7 @@
           </div>
           <div class="navigation__links-wrapper">
             <nav class="navigation__links">
+              <a class="navigation__link" href="about.html">About Me</a>
               <a class="navigation__link" href="index.html#projects">Projects</a>
               <a class="navigation__link" href="examples.html">Coding Examples</a>
               <a class="navigation__link" href="scs.html">SCS Scheme</a>
@@ -46,16 +47,18 @@
       </div>
       <div class="flex-content-wrapper">
         <div class="hero">
-          <div class="hero__text">
-            <div class="hero__intro">My name is Dave</div>
-            <div class="hero__title">I am a Web Developer</div>
+          <div class="hero__main-wrapper">
+            <div class="hero__text-wrapper">
+              <div class="hero__intro">My name is Dave</div>
+              <div class="hero__title">I am a Web Developer</div>
+            </div>
           </div>
         </div>
 
         <div class="full-width-wrapper full-width-wrapper--projects">
           <div id="projects" class="inner-wrapper projects">
             <h2 class="projects__heading">My Projects</h2>
-            <div class="projects__wrapper">
+            <div class="inner-wrapper-content projects__wrapper">
               <div class="projects__item">Project item</div>
               <div class="projects__item">Project item</div>
               <div class="projects__item">Project item</div>
@@ -68,12 +71,24 @@
         <div class="full-width-wrapper full-width-wrapper--contact">
           <div id="contact" class="inner-wrapper contact">
             <h2 class="contact__heading">Contact Me</h2>
-            <div class="contact__wrapper">
+            <div class="inner-wrapper-content contact__wrapper">
               <div class="contact__form-wrapper contact__item">
-                <label for="">name</label><input type="text" /><label for="">email</label><input type="text" /><label
-                  for=""
-                  >message</label
-                ><textarea name="" id="" rows="10"></textarea>
+                <form action="#" class="contact__form">
+                  <p class="contact__intro-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                  <div class="contact__input-wrapper">
+                    <label class="contact__label contact__input-wrapper--name" for="name">Name:</label>
+                    <input class="contact__input" type="text" id="name" name="name" />
+                  </div>
+                  <div class="contact__input-wrapper contact__input-wrapper--email">
+                    <label class="contact__label" for="email">Email:</label>
+                    <input class="contact__input" type="email" id="email" name="email" />
+                  </div>
+                  <div class="contact__input-wrapper contact__input-wrapper--message">
+                    <label class="contact__label" for="message">Message:</label>
+                    <textarea class="contact__message" name="message" id="message" rows="10"></textarea>
+                  </div>
+                  <button type="submit">Message Me</button>
+                </form>
               </div>
               <div class="contact__details-wrapper contact__item">
                 <p>

@@ -1,6 +1,12 @@
+.contact__input-wrapper, .contact__wrapper, .projects__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 .flex-main-wrapper {
   display: flex;
   flex-direction: column;
+  background-color: #e0e1dd;
 }
 
 @media screen and (min-width: 992px) {
@@ -8,31 +14,43 @@
     position: fixed;
     top: 0%;
     height: 100%;
-    width: 12.5rem;
+    width: 300px;
   }
 }
 
 @media screen and (min-width: 992px) {
   .flex-content-wrapper {
     position: relative;
-    margin-left: 12.5rem;
+    margin-left: 300px;
+    border-left: 3px solid #0d1b2a;
   }
 }
 
+.full-width-wrapper {
+  padding: 30px 1rem 0;
+}
+
 .inner-wrapper {
-  margin: 0px auto;
+  margin: 0 auto;
   max-width: 1200px;
 }
 
-.full-width-wrapper {
-  padding: 1.875rem 1rem 0;
+.inner-wrapper-content {
+  padding: 1rem;
+  width: 95%;
+  margin: 1rem auto 0;
+  border-radius: 4px;
+}
+@media screen and (min-width: 576px) {
+  .inner-wrapper-content {
+    padding: 1.5rem;
+  }
 }
 
 :root {
   line-height: 1.5;
-  font-size: 16px;
-  font-family: Montserrat;
-  font-weight: 600;
+  font-size: 1rem;
+  font-family: Roboto;
 }
 
 * {
@@ -44,7 +62,7 @@
 .navigation {
   display: flex;
   flex-direction: column;
-  background-color: #d3d3d3;
+  background-color: #e0e1dd;
   padding: 0 1rem;
 }
 @media screen and (min-width: 576px) {
@@ -63,6 +81,7 @@
 @media screen and (min-width: 992px) {
   .navigation__logo {
     width: 100%;
+    padding: 2rem 0;
   }
 }
 .navigation__hamburger {
@@ -91,12 +110,12 @@
 @media screen and (min-width: 576px) {
   .navigation__links-wrapper {
     display: flex;
-    width: 85%;
+    width: 90%;
   }
 }
 @media screen and (min-width: 768px) {
   .navigation__links-wrapper {
-    width: 60%;
+    width: 70%;
   }
 }
 @media screen and (min-width: 992px) {
@@ -124,6 +143,17 @@
 }
 .navigation__link {
   text-decoration: none;
+  color: #0d1b2a;
+  font-weight: 600;
+}
+.navigation__link:hover {
+  color: #778da9;
+}
+@media screen and (min-width: 992px) {
+  .navigation__link {
+    font-size: 24px;
+    padding: 10px;
+  }
 }
 .navigation__link--logo {
   display: flex;
@@ -134,9 +164,19 @@
   text-transform: uppercase;
   font-size: 20px;
   color: white;
-  background-color: black;
+  background-color: #0d1b2a;
   border-radius: 50%;
-  padding: 15px;
+}
+.navigation__link--logo:hover {
+  background-color: #e0e1dd;
+  border: 2px solid #0d1b2a;
+}
+@media screen and (min-width: 992px) {
+  .navigation__link--logo {
+    font-size: 64px;
+    width: 120px;
+    height: 120px;
+  }
 }
 .navigation__socials {
   display: none;
@@ -150,7 +190,7 @@
 
 .hero {
   background: url(../../img/hero/hero-image-bw.jpg) no-repeat center/cover;
-  background-color: red;
+  background-color: #415a77;
   background-blend-mode: multiply;
   width: 100%;
   height: calc(100vh - 3rem);
@@ -160,21 +200,30 @@
     height: 100vh;
   }
 }
-.hero__text {
+.hero__main-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 80%;
-  color: white;
+  color: #e0e1dd;
 }
+.hero__text-wrapper {
+  background-color: #1b263b;
+  justify-content: center;
+  text-align: center;
+  border-radius: 7.5px;
+  padding: 3.25rem 3.5rem;
+  letter-spacing: -1px;
+}
+.hero__intro {
+  font-size: 4rem;
+}
+.hero__title {
+  font-size: 2.6666666667rem;
+}
+
 .projects__wrapper {
-  padding-top: 25px;
-  width: 95%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   flex-wrap: wrap;
 }
 @media screen and (min-width: 576px) {
@@ -211,16 +260,8 @@
   }
 }
 
-.full-width-wrapper--projects {
-  background-color: blue;
-}
-
 .contact__wrapper {
-  padding: 30px 0;
-  width: 95%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
+  margin-bottom: 2rem;
   flex-wrap: wrap;
 }
 @media screen and (min-width: 768px) {
@@ -230,22 +271,24 @@
   }
 }
 .contact__item {
-  border: 1px solid black;
-  display: flex;
-  flex-direction: column;
+  margin-bottom: 1.5rem;
+  border-radius: 4px;
+  background-color: #1b263b;
+  color: #e0e1dd;
 }
-.contact__form-wrapper {
-  margin-bottom: 20px;
-}
-@media screen and (min-width: 768px) {
-  .contact__form-wrapper {
-    width: 45%;
-  }
+.contact__form-wrapper, .contact__details-wrapper {
+  padding: 15px;
 }
 @media screen and (min-width: 768px) {
-  .contact__details-wrapper {
-    width: 45%;
+  .contact__form-wrapper, .contact__details-wrapper {
+    flex: 0 1 45%;
   }
+}
+.contact__input-wrapper {
+  margin-top: 1rem;
+}
+.contact__input {
+  height: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */

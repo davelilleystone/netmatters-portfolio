@@ -1,6 +1,6 @@
 .hero {
   background: url(../../img/hero/hero-image-bw.jpg) no-repeat center/cover;
-  background-color: red;
+  background-color: rgba($hero-image-blend, 1);
   background-blend-mode: multiply;
   width: 100%;
   height: calc(100vh - 3rem);
@@ -8,18 +8,29 @@
     height: 100vh;
   }
 
-  &__text {
+  &__main-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 80%;
-    color: white;
+    color: $hero-text-color;
+  }
+
+  &__text-wrapper {
+    background-color: $hero-text-background-color;
+    justify-content: center;
+    text-align: center;
+    border-radius: 7.5px;
+    padding: 3.25rem 3.5rem;
+    letter-spacing: -1px;
   }
 
   &__intro {
+    font-size: $hero-title-size;
   }
 
   &__title {
+    font-size: calc($hero-title-size / 1.5);
   }
 }

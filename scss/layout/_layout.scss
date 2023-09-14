@@ -12,6 +12,7 @@
     top: 0%;
     height: 100%;
     width: px-to-rem(300px);
+    border-right: 3px solid $midnight;
   }
 }
 
@@ -20,7 +21,6 @@
   @include mq(l) {
     position: relative;
     margin-left: px-to-rem(300px);
-    border-left: 3px solid black;
   }
 }
 
@@ -36,8 +36,7 @@
 // constrains content to 1600px
 .inner-wrapper {
   margin: 0 auto;
-  // max-width: $inner-wrapper-max;
-  max-width: 1600px;
+  max-width: $inner-wrapper-max;
 }
 
 // adds a border around content

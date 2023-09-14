@@ -10,21 +10,23 @@
   }
 
   &__item {
-    margin-bottom: 1.5rem;
     border-radius: 4px;
-    background-color: #1b263b;
     color: #e0e1dd;
   }
 
   &__form-wrapper,
   &__details-wrapper {
-    padding: 15px;
     @include mq(m) {
       flex: 0 1 45%;
     }
   }
 
   &__form-wrapper {
+    background-color: $contact-form-background-color;
+    padding: 1rem;
+    @include mq(m) {
+      padding: 2rem;
+    }
   }
 
   &__details-wrapper {
@@ -37,10 +39,32 @@
   // contact form
 
   &__input-wrapper {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
   }
 
   &__input {
-    height: 2rem;
+    height: 2.5rem;
+  }
+
+  &__input-wrapper--button {
+    @extend %flex-column;
+    align-items: start;
+  }
+
+  &__label {
+    padding-bottom: 0.5rem;
+  }
+
+  &__button {
+    @include std-btn($tropical-indigo, $std-btn-font-size);
+    &:hover {
+      background-color: $contact-form-button-hover;
+    }
+  }
+
+  // contact details
+
+  &__details {
+    background-color: $contact-form-background-color;
   }
 }

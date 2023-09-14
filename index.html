@@ -39,8 +39,22 @@
             </nav>
           </div>
           <ul class="navigation__socials">
-            <li><a class="navigation__link" href="#">linkedin</a></li>
-            <li><a class="navigation__link" href="#">github</a></li>
+            <li>
+              <a
+                class="navigation__icon navigation__icon--linkedin"
+                href="https://www.linkedin.com/in/david-lilleystone/"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                class="navigation__icon navigation__icon--github"
+                href="https://github.com/davelilleystone/"
+                target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </li>
           </ul>
         </div>
       </div>
@@ -133,6 +147,7 @@
             </div>
           </div>
         </div>
+        <div class="divider"></div>
         <div class="full-width-wrapper full-width-wrapper--contact">
           <div id="contact" class="inner-wrapper contact">
             <h2 class="contact__heading">Contact Me</h2>
@@ -140,8 +155,8 @@
               <div class="contact__form-wrapper contact__item">
                 <form action="#" class="contact__form">
                   <p class="contact__intro-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                  <div class="contact__input-wrapper">
-                    <label class="contact__label contact__input-wrapper--name" for="name">Name:</label>
+                  <div class="contact__input-wrapper contact__input-wrapper--name">
+                    <label class="contact__label" for="name">Name:</label>
                     <input class="contact__input" type="text" id="name" name="name" />
                   </div>
                   <div class="contact__input-wrapper contact__input-wrapper--email">
@@ -152,16 +167,17 @@
                     <label class="contact__label" for="message">Message:</label>
                     <textarea class="contact__message" name="message" id="message" rows="10"></textarea>
                   </div>
-                  <button type="submit">Message Me</button>
+                  <div class="contact__input-wrapper contact__input-wrapper--button">
+                    <button class="contact__button" type="submit">Message Me</button>
+                  </div>
                 </form>
               </div>
               <div class="contact__details-wrapper contact__item">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus delectus, vero accusamus eos
-                  accusantium voluptates ea dolorum quidem ut, sed nemo magni ab nisi, ipsam eligendi? Voluptatum
-                  consectetur aut corporis.
-                </p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, iure?</p>
+                <div class="contact__details">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum debitis corporis veritatis itaque, nisi
+                  ex tenetur eaque saepe dignissimos numquam aperiam odit ducimus possimus impedit. Beatae nemo saepe
+                  culpa eaque.
+                </div>
               </div>
             </div>
           </div>

@@ -12,6 +12,7 @@
   @include mq(l) {
     flex-direction: column;
     align-items: center;
+    justify-content: start;
     height: 100%;
   }
 
@@ -70,7 +71,12 @@
 
     @include mq(l) {
       flex-direction: column;
+      align-items: start;
+      padding: px-to-rem(20px) 0;
+      margin: 2rem 0;
       width: 100%;
+      border-top: 2px solid $nav-ls-border-color;
+      border-bottom: 2px solid $nav-ls-border-color;
     }
   }
 
@@ -83,6 +89,7 @@
     }
     @include mq(l) {
       font-size: 24px;
+      font-weight: 400;
       padding: 10px;
     }
     &--logo {
@@ -98,7 +105,7 @@
       border-radius: 50%;
       &:hover {
         background-color: $nav-logo-hover-background-color;
-        border: 2px solid $nav-logo-hover-border-color;
+        color: #fff;
       }
       @include mq(l) {
         font-size: 64px;
@@ -110,9 +117,29 @@
 
   &__socials {
     display: none;
+    width: 100%;
+    border-bottom: 2px solid $nav-ls-border-color;
     @include mq(l) {
+      @include reset-ul;
+      padding-bottom: 20px;
       display: flex;
-      margin-top: auto;
+      justify-content: space-evenly;
+    }
+  }
+
+  &__icon {
+    font-size: $social-btn-std;
+    &--linkedin {
+      color: $linkedin-blue;
+      &:hover {
+        color: $linkedin-hover;
+      }
+    }
+    &--github {
+      color: $github-red;
+      &:hover {
+        color: $github-blue;
+      }
     }
   }
 }

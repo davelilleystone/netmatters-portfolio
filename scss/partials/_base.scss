@@ -10,3 +10,20 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.divider {
+  height: 1px;
+  border-top: 2px solid black;
+  color: $midnight;
+  width: calc(100% - 2rem);
+  margin: 20px auto 0;
+
+  @include mq(s) {
+    display: none;
+  }
+}

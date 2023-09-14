@@ -1,4 +1,4 @@
-.contact__input-wrapper, .contact__wrapper, .card__description, .card, .projects__wrapper {
+.contact__input-wrapper--button, .contact__input-wrapper, .contact__wrapper, .card__description, .card, .projects__wrapper {
   display: flex;
   flex-direction: column;
 }
@@ -29,6 +29,11 @@
 .full-width-wrapper {
   padding: 30px 1rem 0;
 }
+@media screen and (min-width: 768px) {
+  .full-width-wrapper {
+    padding: 30px 2rem 0;
+  }
+}
 
 .inner-wrapper {
   margin: 0 auto;
@@ -36,19 +41,15 @@
 }
 
 .inner-wrapper-content {
-  margin: 0.5rem auto 0;
   border-radius: 4px;
 }
 @media screen and (min-width: 768px) {
   .inner-wrapper-content {
-    padding: 1rem;
-    width: 95%;
+    margin: 0.5rem auto 0;
   }
 }
 @media screen and (min-width: 992px) {
   .inner-wrapper-content {
-    padding: 1.5rem;
-    width: 95%;
     margin: 1rem auto 0;
   }
 }
@@ -64,6 +65,24 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.divider {
+  height: 1px;
+  border-top: 2px solid black;
+  color: #0d1b2a;
+  width: calc(100% - 2rem);
+  margin: 20px auto 0;
+}
+@media screen and (min-width: 576px) {
+  .divider {
+    display: none;
+  }
 }
 
 .navigation {
@@ -82,6 +101,7 @@
   .navigation {
     flex-direction: column;
     align-items: center;
+    justify-content: start;
     height: 100%;
   }
 }
@@ -145,7 +165,12 @@
 @media screen and (min-width: 992px) {
   .navigation__links {
     flex-direction: column;
+    align-items: start;
+    padding: 20px 0;
+    margin: 2rem 0;
     width: 100%;
+    border-top: 2px solid #0d1b2a;
+    border-bottom: 2px solid #0d1b2a;
   }
 }
 .navigation__link {
@@ -159,6 +184,7 @@
 @media screen and (min-width: 992px) {
   .navigation__link {
     font-size: 24px;
+    font-weight: 400;
     padding: 10px;
   }
 }
@@ -175,8 +201,8 @@
   border-radius: 50%;
 }
 .navigation__link--logo:hover {
-  background-color: #e0e1dd;
-  border: 2px solid #0d1b2a;
+  background-color: #027bce;
+  color: #fff;
 }
 @media screen and (min-width: 992px) {
   .navigation__link--logo {
@@ -187,12 +213,33 @@
 }
 .navigation__socials {
   display: none;
+  width: 100%;
+  border-bottom: 2px solid #0d1b2a;
 }
 @media screen and (min-width: 992px) {
   .navigation__socials {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 20px;
     display: flex;
-    margin-top: auto;
+    justify-content: space-evenly;
   }
+}
+.navigation__icon {
+  font-size: 3rem;
+}
+.navigation__icon--linkedin {
+  color: #0077b5;
+}
+.navigation__icon--linkedin:hover {
+  color: #dd5143;
+}
+.navigation__icon--github {
+  color: #171515;
+}
+.navigation__icon--github:hover {
+  color: #4078c0;
 }
 
 .hero {
@@ -201,6 +248,7 @@
   background-blend-mode: multiply;
   width: 100%;
   height: calc(100vh - 3rem);
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 992px) {
   .hero {
@@ -276,7 +324,7 @@
   width: 100%;
 }
 .card__description {
-  font-size: px-to-rem(14px);
+  font-size: 14px;
   color: #e0e1dd;
   background-color: #415a77;
   padding: 0.5rem 0.75rem;
@@ -287,18 +335,18 @@
 }
 .card__button {
   display: inline-block;
+  font-size: 1rem;
   margin: 1rem 0;
   padding: 1rem 1.33rem;
-  background-color: #0d1b2a;
+  background-color: #70ae6e;
   color: #fff;
   border: 1px solid transparent;
   border-radius: 3px;
   text-transform: uppercase;
   text-decoration: none;
-  margin-top: 1rem;
 }
 .card__button:hover {
-  background-color: #1b263b;
+  background-color: #b4654a;
 }
 
 .contact__wrapper {
@@ -312,24 +360,52 @@
   }
 }
 .contact__item {
-  margin-bottom: 1.5rem;
   border-radius: 4px;
-  background-color: #1b263b;
   color: #e0e1dd;
-}
-.contact__form-wrapper, .contact__details-wrapper {
-  padding: 15px;
 }
 @media screen and (min-width: 768px) {
   .contact__form-wrapper, .contact__details-wrapper {
     flex: 0 1 45%;
   }
 }
+.contact__form-wrapper {
+  background-color: #1b263b;
+  padding: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .contact__form-wrapper {
+    padding: 2rem;
+  }
+}
 .contact__input-wrapper {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
 .contact__input {
-  height: 2rem;
+  height: 2.5rem;
+}
+.contact__input-wrapper--button {
+  align-items: start;
+}
+.contact__label {
+  padding-bottom: 0.5rem;
+}
+.contact__button {
+  display: inline-block;
+  font-size: 1rem;
+  margin: 1rem 0;
+  padding: 1rem 1.33rem;
+  background-color: #7e78d2;
+  color: #fff;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.contact__button:hover {
+  background-color: #4a314d;
+}
+.contact__details {
+  background-color: #1b263b;
 }
 
 /*# sourceMappingURL=style.css.map */

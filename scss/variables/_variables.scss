@@ -5,10 +5,26 @@ $ebony-clay: #1b263b;
 $slate: #415a77;
 $grey-blue: #778da9;
 $pearl-blush: #e0e1dd;
+$asparagus: #70ae6e;
+$brown-sugar: #b4654a;
+$tropical-indigo: #7e78d2;
+$english-violet: #4a314d;
+$citron: #027bce;
+$linkedin-blue: #0077b5;
+$linkedin-red: #dd5143;
+$github-red: #171515;
+$github-blue: #4078c0;
 
 // default colour
 
 $default-color: $midnight;
+
+// social icons
+
+$github-color: $github-red;
+$github-color: $github-blue;
+$linkedin-color: $linkedin-blue;
+$linkedin-hover: $linkedin-red;
 
 // colors - sections
 
@@ -24,8 +40,8 @@ $nav-link-color: $midnight;
 $nav-hover-color: $grey-blue;
 $nav-background-color: $pearl-blush;
 $nav-logo-background-color: $midnight;
-$nav-logo-hover-background-color: $pearl-blush;
-$nav-logo-hover-border-color: $midnight;
+$nav-logo-hover-background-color: $citron;
+$nav-ls-border-color: $midnight;
 
 // projects
 
@@ -33,8 +49,14 @@ $card-heading-background: $slate;
 $card-text-color: $pearl-blush;
 $card-border-color: $slate;
 $card-description-background: $grey-blue;
-$card-button-background: $midnight;
-$card-button-hover: $ebony-clay;
+$card-button-background: $asparagus;
+$card-button-hover: $brown-sugar;
+
+// contact
+
+$contact-form-background-color: $ebony-clay;
+$contact-form-button-color: $tropical-indigo;
+$contact-form-button-hover: $english-violet;
 
 // standard button sizing
 
@@ -42,6 +64,7 @@ $std-btn-font-size: 1rem;
 $std-btn-font-color: #fff;
 $std-btn-top-bottom-margin: 1rem;
 $std-btn-vert-padding: 1rem;
+$social-btn-std: 3rem;
 
 // font sizes
 

@@ -60,8 +60,8 @@
   }
 
   &__button {
-    @include std-btn($card-button-background);
-    margin-top: 1rem;
+    @include std-btn($card-button-background, $std-btn-font-size);
+
     &:hover {
       background-color: $card-button-hover;
     }

@@ -4,6 +4,7 @@
   background-blend-mode: multiply;
   width: 100%;
   height: calc(100vh - 3rem);
+  margin-bottom: px-to-rem(30px);
   @include mq(l) {
     height: 100vh;
   }

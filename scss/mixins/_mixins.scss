@@ -26,15 +26,22 @@
   }
 }
 
-@mixin std-btn($col) {
+@mixin std-btn($col, $font-size) {
   display: inline-block;
+  font-size: $font-size;
   margin: $std-btn-top-bottom-margin 0;
   padding: $std-btn-vert-padding calc($std-btn-vert-padding * 1.33);
   background-color: $col;
   color: $std-btn-font-color;
   border: 1px solid transparent;
   border-radius: 3px;
-
   text-transform: uppercase;
   text-decoration: none;
+}
+
+// reset ul
+@mixin reset-ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }

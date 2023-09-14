@@ -27,6 +27,10 @@
 // full width wrapper
 .full-width-wrapper {
   padding: px-to-rem(30px) 1rem 0;
+
+  @include mq(m) {
+    padding: px-to-rem(30px) 2rem 0;
+  }
 }
 
 // constrains content to 1600px
@@ -37,18 +41,29 @@
 }
 
 // adds a border around content
-.inner-wrapper-content {
-  margin: 0.5rem auto 0;
-  border-radius: 4px;
+// .inner-wrapper-content {
+//   margin: 0.5rem auto 0;
+//   border-radius: 4px;
 
+//   @include mq(m) {
+//     padding: 1rem;
+//     width: 95%;
+//   }
+
+//   @include mq(l) {
+//     padding: 1.5rem;
+//     width: 95%;
+//     margin: 1rem auto 0;
+//   }
+// }
+
+.inner-wrapper-content {
+  border-radius: 4px;
   @include mq(m) {
-    padding: 1rem;
-    width: 95%;
+    margin: 0.5rem auto 0;
   }
 
   @include mq(l) {
-    padding: 1.5rem;
-    width: 95%;
     margin: 1rem auto 0;
   }
 }

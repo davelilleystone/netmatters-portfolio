@@ -288,11 +288,11 @@
 .card__button {
   display: inline-block;
   margin: 1rem 0;
+  padding: 1rem 1.33rem;
   background-color: #0d1b2a;
-  color: white;
+  color: #fff;
   border: 1px solid transparent;
   border-radius: 3px;
-  padding: 1rem 1.33rem;
   text-transform: uppercase;
   text-decoration: none;
   margin-top: 1rem;

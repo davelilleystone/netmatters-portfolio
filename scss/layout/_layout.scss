@@ -20,7 +20,7 @@
   @include mq(l) {
     position: relative;
     margin-left: px-to-rem(300px);
-    border-left: 3px solid #0d1b2a;
+    border-left: 3px solid black;
   }
 }
 
@@ -29,19 +29,26 @@
   padding: px-to-rem(30px) 1rem 0;
 }
 
-// constrains content to 1200px
+// constrains content to 1600px
 .inner-wrapper {
   margin: 0 auto;
-  max-width: $inner-wrapper-max;
+  // max-width: $inner-wrapper-max;
+  max-width: 1600px;
 }
 
 // adds a border around content
 .inner-wrapper-content {
-  padding: 1rem;
-  width: 95%;
-  margin: 1rem auto 0;
+  margin: 0.5rem auto 0;
   border-radius: 4px;
-  @include mq(s) {
+
+  @include mq(m) {
+    padding: 1rem;
+    width: 95%;
+  }
+
+  @include mq(l) {
     padding: 1.5rem;
+    width: 95%;
+    margin: 1rem auto 0;
   }
 }

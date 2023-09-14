@@ -22,15 +22,15 @@
     justify-content: center;
     text-align: center;
     border-radius: 7.5px;
-    padding: 3.25rem 3.5rem;
+    padding: 2rem 2.5rem;
     letter-spacing: -1px;
   }
 
   &__intro {
-    font-size: $hero-title-size;
+    font-size: 2rem;
   }
 
   &__title {
-    font-size: calc($hero-title-size / 1.5);
+    font-size: 1.5rem;
   }
 }

@@ -25,3 +25,15 @@
     @error ('Unknown breakpoint supplied');
   }
 }
+
+@mixin std-btn($col) {
+  display: inline-block;
+  margin: 1rem 0;
+  background-color: $col;
+  color: white;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  padding: 1rem calc(1rem * 1.33);
+  text-transform: uppercase;
+  text-decoration: none;
+}

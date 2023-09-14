@@ -1,4 +1,4 @@
-.contact__input-wrapper, .contact__wrapper, .projects__wrapper {
+.contact__input-wrapper, .contact__wrapper, .card__description, .card, .projects__wrapper {
   display: flex;
   flex-direction: column;
 }
@@ -22,7 +22,7 @@
   .flex-content-wrapper {
     position: relative;
     margin-left: 300px;
-    border-left: 3px solid #0d1b2a;
+    border-left: 3px solid black;
   }
 }
 
@@ -32,18 +32,24 @@
 
 .inner-wrapper {
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1600px;
 }
 
 .inner-wrapper-content {
-  padding: 1rem;
-  width: 95%;
-  margin: 1rem auto 0;
+  margin: 0.5rem auto 0;
   border-radius: 4px;
 }
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 768px) {
+  .inner-wrapper-content {
+    padding: 1rem;
+    width: 95%;
+  }
+}
+@media screen and (min-width: 992px) {
   .inner-wrapper-content {
     padding: 1.5rem;
+    width: 95%;
+    margin: 1rem auto 0;
   }
 }
 
@@ -51,6 +57,7 @@
   line-height: 1.5;
   font-size: 1rem;
   font-family: Roboto;
+  color: #0d1b2a;
 }
 
 * {
@@ -213,14 +220,14 @@
   justify-content: center;
   text-align: center;
   border-radius: 7.5px;
-  padding: 3.25rem 3.5rem;
+  padding: 2rem 2.5rem;
   letter-spacing: -1px;
 }
 .hero__intro {
-  font-size: 4rem;
+  font-size: 2rem;
 }
 .hero__title {
-  font-size: 2.6666666667rem;
+  font-size: 1.5rem;
 }
 
 .projects__wrapper {
@@ -232,32 +239,66 @@
     justify-content: space-between;
   }
 }
-.projects__item {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  margin-bottom: 1rem;
-  border: 1px solid black;
+
+.card {
+  margin-bottom: 2rem;
+  border: 1px solid #415a77;
 }
 @media screen and (min-width: 576px) {
-  .projects__item {
+  .card {
     width: 49%;
   }
 }
 @media screen and (min-width: 768px) {
-  .projects__item {
+  .card {
     width: 32%;
   }
 }
 @media screen and (min-width: 992px) {
-  .projects__item {
+  .card {
     width: 49%;
   }
 }
 @media screen and (min-width: 1200px) {
-  .projects__item {
+  .card {
     width: 32%;
   }
+}
+.card__heading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  background-color: #415a77;
+  color: #e0e1dd;
+  padding: 0.5rem 0;
+  text-align: center;
+}
+.card__image {
+  width: 100%;
+}
+.card__description {
+  font-size: px-to-rem(14px);
+  color: #e0e1dd;
+  background-color: #415a77;
+  padding: 0.5rem 0.75rem;
+}
+.card__button-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.card__button {
+  display: inline-block;
+  margin: 1rem 0;
+  background-color: #0d1b2a;
+  color: white;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  padding: 1rem 1.33rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-top: 1rem;
+}
+.card__button:hover {
+  background-color: #1b263b;
 }
 
 .contact__wrapper {

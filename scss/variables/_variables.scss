@@ -27,10 +27,19 @@ $nav-logo-background-color: $midnight;
 $nav-logo-hover-background-color: $pearl-blush;
 $nav-logo-hover-border-color: $midnight;
 
-// fonts
+// projects
+
+$card-heading-background: $slate;
+$card-text-color: $pearl-blush;
+$card-border-color: $slate;
+$card-description-background: $grey-blue;
+$card-button-background: $midnight;
+$card-button-hover: $ebony-clay;
+
+// font sizes
 
 $base-font-size: 1rem;
-$hero-title-size: 4rem;
+$font-size-medium: px-to-rem(14px);
 
 // screen sizes
 

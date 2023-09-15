@@ -1,4 +1,4 @@
-.scs__content-wrapper, .scs__wrapper, .contact__input-wrapper--button, .contact__input-wrapper, .contact__wrapper, .card__description, .card, .projects__wrapper {
+.scs__content-wrapper, .scs__wrapper, .contact__details-items, .contact__input-wrapper--button, .contact__input-wrapper, .contact__wrapper, .card__description, .card, .projects__wrapper {
   display: flex;
   flex-direction: column;
 }
@@ -386,17 +386,29 @@ p {
     flex: 0 1 45%;
   }
 }
-.contact__form-wrapper {
+.contact__form-wrapper, .contact__details {
   background-color: #1b263b;
   padding: 1rem;
 }
 @media screen and (min-width: 768px) {
-  .contact__form-wrapper {
+  .contact__form-wrapper, .contact__details {
+    padding: 1.25rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact__form-wrapper, .contact__details {
     padding: 2rem;
   }
 }
+.contact__intro-text {
+  font-size: 18px;
+}
 .contact__input-wrapper {
   margin-top: 1.5rem;
+}
+.contact__input, .contact__message {
+  font-size: 18px;
+  border-radius: 5px;
 }
 .contact__input {
   height: 2.5rem;
@@ -423,7 +435,28 @@ p {
   background-color: #4a314d;
 }
 .contact__details {
-  background-color: #1b263b;
+  margin-top: 30px;
+}
+@media screen and (min-width: 768px) {
+  .contact__details {
+    margin-top: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contact__details-items {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact__details-items {
+    font-size: 1.5rem;
+  }
+}
+.contact__details-items .fa-solid {
+  padding-right: 1rem;
+}
+.contact__details-item {
+  margin-top: 1rem;
 }
 
 .examples__coming-soon {

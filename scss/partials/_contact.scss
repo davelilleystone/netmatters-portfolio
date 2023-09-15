@@ -22,10 +22,14 @@
     }
   }
 
-  &__form-wrapper {
+  &__form-wrapper,
+  &__details {
     background-color: $contact-form-background-color;
     padding: 1rem;
     @include mq(m) {
+      padding: 1.25rem;
+    }
+    @include mq(xl) {
       padding: 2rem;
     }
   }
@@ -37,10 +41,20 @@
     @extend %flex-column;
   }
 
+  &__intro-text {
+    font-size: $font-size-large;
+  }
+
   // contact form
 
   &__input-wrapper {
     margin-top: 1.5rem;
+  }
+
+  &__input,
+  &__message {
+    font-size: $font-size-large;
+    border-radius: 5px;
   }
 
   &__input {
@@ -66,6 +80,28 @@
   // contact details
 
   &__details {
-    background-color: $contact-form-background-color;
+    margin-top: px-to-rem(30px);
+    @include mq(m) {
+      margin-top: 0;
+    }
+  }
+
+  &__details-items {
+    @extend %flex-column;
+    @include mq(m) {
+      font-size: $font-size-large;
+    }
+
+    @include mq(xl) {
+      font-size: $font-size-xlarge;
+    }
+
+    .fa-solid {
+      padding-right: 1rem;
+    }
+  }
+
+  &__details-item {
+    margin-top: 1rem;
   }
 }

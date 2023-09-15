@@ -185,7 +185,7 @@ p {
     flex-direction: column;
     align-items: start;
     padding: 20px 0;
-    margin: 2rem 0;
+    margin: 2rem 0 1rem 0;
     width: 100%;
     border-top: 2px solid #0d1b2a;
     border-bottom: 2px solid #0d1b2a;
@@ -201,7 +201,6 @@ p {
 }
 @media screen and (min-width: 992px) {
   .navigation__link {
-    font-size: 24px;
     font-weight: 400;
     padding: 10px;
   }
@@ -239,13 +238,13 @@ p {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     display: flex;
     justify-content: space-evenly;
   }
 }
 .navigation__icon {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 .navigation__icon--linkedin {
   color: #0077b5;
@@ -261,8 +260,7 @@ p {
 }
 
 .hero {
-  background: url(../../img/hero/hero-image-bw.jpg) no-repeat center/cover;
-  background-color: #415a77;
+  background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(107, 107, 107) 50%, rgb(195, 195, 195) 100%), url(../../img/hero/hero-image-bw.jpg) no-repeat center/cover;
   background-blend-mode: multiply;
   width: 100%;
   height: calc(100vh - 3rem);
@@ -276,24 +274,33 @@ p {
 .hero__main-wrapper {
   display: flex;
   flex-direction: column;
+  font-family: Merriweather, serif;
   align-items: center;
   justify-content: center;
   height: 80%;
   color: #e0e1dd;
 }
 .hero__text-wrapper {
-  background-color: #1b263b;
   justify-content: center;
-  text-align: center;
-  border-radius: 7.5px;
-  padding: 2rem 2.5rem;
-  letter-spacing: -1px;
 }
-.hero__intro {
-  font-size: 2rem;
+.hero__intro, .hero__title {
+  margin-bottom: 1rem;
+  font-size: clamp(1.38rem, 0.22vw + 1.34rem, 1.5rem);
 }
-.hero__title {
-  font-size: 1.5rem;
+@media screen and (min-width: 576px) {
+  .hero__intro, .hero__title {
+    font-size: clamp(1.72rem, 0.49vw + 1.63rem, 2rem);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__intro, .hero__title {
+    font-size: clamp(2.15rem, 0.9vw + 1.99rem, 2.67rem);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__intro, .hero__title {
+    font-size: clamp(3.36rem, 2.4vw + 2.94rem, 4.74rem);
+  }
 }
 
 .projects__wrapper {

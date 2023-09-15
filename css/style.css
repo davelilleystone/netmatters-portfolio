@@ -1,4 +1,4 @@
-.contact__input-wrapper--button, .contact__input-wrapper, .contact__wrapper, .card__description, .card, .projects__wrapper {
+.scs__content-wrapper, .scs__wrapper, .contact__input-wrapper--button, .contact__input-wrapper, .contact__wrapper, .card__description, .card, .projects__wrapper {
   display: flex;
   flex-direction: column;
 }
@@ -82,6 +82,10 @@ h1 {
 h2 {
   font-size: 2rem;
   margin-bottom: 1.5rem;
+}
+
+p {
+  margin-bottom: 1rem;
 }
 
 .divider {
@@ -428,6 +432,44 @@ h2 {
 }
 .examples__coming-soon img {
   width: 100%;
+}
+
+@media screen and (min-width: 1200px) {
+  .scs__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.scs__content-wrapper {
+  margin-bottom: 1.5rem;
+}
+.scs__netmatters-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.scs__netmatters-list li {
+  padding: 0.5rem 0;
+}
+.scs__netmatters-list .fa-play {
+  margin-right: 1rem;
+}
+@media screen and (min-width: 1200px) {
+  .scs__scs-th-wrapper {
+    flex: 0 1 50%;
+  }
+}
+.scs__netmatters-wrapper {
+  flex: 0 1 35%;
+}
+.scs img {
+  width: 100%;
+  border-radius: 5px;
+}
+.scs a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 600;
 }
 
 /*# sourceMappingURL=style.css.map */

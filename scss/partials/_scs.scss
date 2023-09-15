@@ -1,0 +1,47 @@
+.scs {
+  &__wrapper {
+    @extend %flex-column;
+    @include mq(xl) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  &__content-wrapper {
+    @extend %flex-column;
+    margin-bottom: 1.5rem;
+  }
+
+  &__netmatters-list {
+    @include reset-ul;
+
+    li {
+      padding: 0.5rem 0;
+    }
+
+    .fa-play {
+      margin-right: 1rem;
+    }
+  }
+
+  &__scs-th-wrapper {
+    @include mq(xl) {
+      flex: 0 1 50%;
+    }
+  }
+
+  &__netmatters-wrapper {
+    flex: 0 1 35%;
+  }
+
+  img {
+    width: 100%;
+    border-radius: 5px;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 600;
+  }
+}

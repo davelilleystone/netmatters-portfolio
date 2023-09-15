@@ -1,5 +1,5 @@
 :root {
-  line-height: 1.5;
+  line-height: $base-line-height;
   font-size: $base-font-size;
   font-family: Roboto;
   color: $default-color;
@@ -26,6 +26,10 @@ h1 {
 h2 {
   font-size: 2rem;
   margin-bottom: 1.5rem;
+}
+
+p {
+  margin-bottom: 1rem;
 }
 
 .divider {

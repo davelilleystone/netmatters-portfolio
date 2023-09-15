@@ -67,10 +67,13 @@ $std-btn-top-bottom-margin: 1rem;
 $std-btn-vert-padding: 1rem;
 $social-btn-std: 3rem;
 
-// font sizes
+// font sizes / line height
 
 $base-font-size: 1rem;
+$font-size-small: px-to-rem(12px);
 $font-size-medium: px-to-rem(14px);
+$font-size-large: px-to-rem(18px);
+$base-line-height: 1.5;
 
 // screen sizes
 

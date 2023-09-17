@@ -77,8 +77,8 @@
       padding: px-to-rem(20px) 0;
       margin: 2rem 0 1rem 0;
       width: 100%;
-      border-top: 2px solid $nav-ls-border-color;
-      border-bottom: 2px solid $nav-ls-border-color;
+      border-top: 1px solid $nav-ls-border-color;
+      border-bottom: 1px solid $nav-ls-border-color;
     }
   }
 
@@ -120,7 +120,7 @@
   &__socials {
     display: none;
     width: 100%;
-    border-bottom: 2px solid $nav-ls-border-color;
+    border-bottom: 1px solid $nav-ls-border-color;
     @include mq(l) {
       @include reset-ul;
       padding-bottom: px-to-rem(10px);

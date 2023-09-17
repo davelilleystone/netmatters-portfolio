@@ -14,6 +14,7 @@
   @extend %flex-column;
   margin-bottom: 2rem;
   border: 1px solid $card-heading-background;
+  border-radius: 4px;
 
   @include mq(s) {
     width: 49%;
@@ -50,7 +51,7 @@
     @extend %flex-column;
     font-size: $font-size-medium;
     color: $card-text-color;
-    background-color: $card-heading-background;
+    background-color: $card-description-background;
     padding: 0.5rem 0.75rem;
   }
 

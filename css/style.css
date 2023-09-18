@@ -259,7 +259,7 @@ p {
 }
 
 .hero {
-  background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(107, 107, 107) 50%, rgb(195, 195, 195) 100%), url(/img/hero/hero-image-bw.jpg) no-repeat center/cover;
+  background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(107, 107, 107) 50%, rgb(195, 195, 195) 100%), url(./img/hero/hero-image-bw.jpg) no-repeat center/cover;
   background-blend-mode: multiply;
   width: 100%;
   height: calc(100vh - 3rem);

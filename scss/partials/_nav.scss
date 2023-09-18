@@ -1,7 +1,6 @@
 .navigation {
   display: flex;
   flex-direction: column;
-  background-color: $nav-background-color;
   padding: 0 1rem;
   border-bottom: 2px solid $nav-ls-border-color;
 
@@ -91,7 +90,6 @@
       color: $nav-hover-color;
     }
     @include mq(l) {
-      // font-size: $font-size-large;
       font-weight: $font-weight-normal;
       padding: px-to-rem(10px);
     }

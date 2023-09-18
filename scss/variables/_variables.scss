@@ -9,16 +9,18 @@ $asparagus: #70ae6e;
 $brown-sugar: #b4654a;
 $tropical-indigo: #7e78d2;
 $english-violet: #4a314d;
-$citron: #027bce;
+$water-blue: #027bce;
 $linkedin-blue: #0077b5;
 $linkedin-red: #dd5143;
 $github-red: #171515;
 $github-blue: #4078c0;
+$white: #fff;
 
 // default colour
 
 $default-color: $midnight;
-$default-bg-color: $pearl-blush;
+$default-bg-color: $white;
+// $default-bg-color: $pearl-blush;
 
 // social icons
 
@@ -39,10 +41,10 @@ $hero-font: Merriweather, serif;
 // nav
 
 $nav-link-color: $midnight;
-$nav-hover-color: $grey-blue;
+$nav-hover-color: $water-blue;
 $nav-background-color: $pearl-blush;
 $nav-logo-background-color: $midnight;
-$nav-logo-hover-background-color: $citron;
+$nav-logo-hover-background-color: $water-blue;
 $nav-ls-border-color: $midnight;
 
 // projects

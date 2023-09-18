@@ -27,6 +27,7 @@
 
   &__hamburger {
     display: block;
+    font-size: 2rem;
     @include mq(s) {
       display: none;
     }

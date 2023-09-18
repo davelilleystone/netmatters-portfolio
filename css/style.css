@@ -131,6 +131,7 @@ p {
 }
 .navigation__hamburger {
   display: block;
+  font-size: 2rem;
 }
 @media screen and (min-width: 576px) {
   .navigation__hamburger {
